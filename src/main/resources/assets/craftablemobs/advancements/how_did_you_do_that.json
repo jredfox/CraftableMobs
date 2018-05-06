@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": "How did you do that?",
+    "description": "Transport an elder guardian to the nether and kill him there... Or find another way to get it there.",
+    "icon": {
+      "item": "minecraft:sponge"
+    },
+    "frame": "challenge"
+  },
+  "parent": "craftablemobs:craftablemobs",
+  "criteria": {
+    "stack_off_eggs": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:elder_guardian",
+          "location": {
+            "dimension": "the_nether"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 500
+  }
+}

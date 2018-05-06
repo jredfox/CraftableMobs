@@ -1,0 +1,24 @@
+{
+  "display": {
+    "title": "Craftable Mobs",
+    "description": "Craft a spawn egg",
+    "icon": {
+      "item": "minecraft:spawn_egg"
+    },
+    "background": "minecraft:textures/blocks/mob_spawner.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "spawn_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:spawn_egg"
+          }
+        ]
+      }
+    }
+  }
+}

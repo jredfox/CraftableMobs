@@ -1,0 +1,22 @@
+{
+  "display": {
+    "title": "Even more mobs",
+    "description": "Craft a mob spawner",
+    "icon": {
+      "item": "minecraft:mob_spawner"
+    }
+  },
+  "parent": "craftablemobs:craftablemobs",
+  "criteria": {
+    "spawn_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:mob_spawner"
+          }
+        ]
+      }
+    }
+  }
+}

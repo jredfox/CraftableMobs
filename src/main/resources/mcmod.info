@@ -1,0 +1,10 @@
+[
+  {
+    "modid": "craftablemobs",
+    "name": "CraftableMobs",
+    "description": "A mod that allows you to craft spawn eggs and spawners.",
+    "version": "1.0.0",
+    "url": "https://github.com/MSathieu/CraftableMobs",
+    "authorList": ["MSathieu"]
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "display": {
+    "title": "Mob Rich",
+    "description": "Get a stack of spawn eggs",
+    "icon": {
+      "item": "minecraft:diamond"
+    },
+    "frame": "goal"
+  },
+  "parent": "craftablemobs:craftablemobs",
+  "criteria": {
+    "stack_off_eggs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:spawn_egg",
+            "count": 64
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 500
+  }
+}
