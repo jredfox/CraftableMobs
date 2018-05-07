@@ -59,6 +59,12 @@ public class CraftableMobs {
     register_egg("slime", Items.SLIME_BALL);
     register_egg("wolf", Items.COOKED_BEEF);
     register_egg("elder_guardian", Blocks.SEA_LANTERN);
+    register_egg("bat", Items.FLINT);
+    register_egg("endermite", Items.ENDER_EYE);
+    register_egg("polar_bear", Blocks.SNOW);
+    register_egg("shulker", Items.SHULKER_SHELL);
+    register_egg("vindication_illager", Items.IRON_AXE);
+    register_egg("evocation_illager", Items.TOTEM_OF_UNDYING);
   }
   private void register_egg(String mob, Block ingredient) {
     register_egg(mob, Item.getItemFromBlock(ingredient));
