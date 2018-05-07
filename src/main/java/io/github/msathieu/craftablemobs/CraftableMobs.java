@@ -1,6 +1,7 @@
 package io.github.msathieu.craftablemobs;
 
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -16,6 +17,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class CraftableMobs {
   @EventHandler
   public void init(FMLInitializationEvent event) {
+    Blocks.MOB_SPAWNER.setCreativeTab(CreativeTabs.DECORATIONS);
     ResourceLocation eggs_group = new ResourceLocation("craftablemobs:eggs");
     GameRegistry.addShapedRecipe(new ResourceLocation("craftablemobs:egg"), eggs_group, new ItemStack(Items.SPAWN_EGG, 9), new Object[] {
       "III",
