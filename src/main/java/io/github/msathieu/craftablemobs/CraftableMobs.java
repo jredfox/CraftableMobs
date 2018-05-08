@@ -68,6 +68,9 @@ public class CraftableMobs {
     register_egg("vindication_illager", Items.IRON_AXE);
     register_egg("evocation_illager", Items.TOTEM_OF_UNDYING);
     register_egg("zombie_villager", Items.GOLDEN_APPLE);
+    register_egg("donkey", Blocks.CHEST);
+    register_egg("vex", Items.IRON_SWORD);
+    register_egg("skeleton_horse", Blocks.BONE_BLOCK);
   }
   private void register_egg(String mob, Block ingredient) {
     register_egg(mob, Item.getItemFromBlock(ingredient));
