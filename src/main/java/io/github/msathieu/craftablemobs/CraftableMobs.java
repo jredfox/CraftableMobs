@@ -25,21 +25,6 @@ public class CraftableMobs {
     };
     Blocks.MOB_SPAWNER.setCreativeTab(CreativeTabs.DECORATIONS);
     Items.SPAWN_EGG.setCreativeTab(spawnEggs);
-    ResourceLocation eggsGroup = new ResourceLocation("craftablemobs:eggs");
-    GameRegistry.addShapedRecipe(new ResourceLocation("craftablemobs:egg"), eggsGroup, new ItemStack(Items.SPAWN_EGG, 9), new Object[] {
-      "III",
-      "IGI",
-      "III",
-      'G', Items.GHAST_TEAR,
-      'I', Items.IRON_INGOT
-    });
-    GameRegistry.addShapedRecipe(new ResourceLocation("craftablemobs:spawner"), new ResourceLocation(""), new ItemStack(Blocks.MOB_SPAWNER), new Object[] {
-      "BBB",
-      "BDB",
-      "BBB",
-      'B', Blocks.IRON_BARS,
-      'D', Blocks.DIAMOND_BLOCK
-    });
     registerEgg("zombie", Items.ROTTEN_FLESH);
     registerEgg("spider", Items.STRING);
     registerEgg("enderman", Items.ENDER_PEARL);

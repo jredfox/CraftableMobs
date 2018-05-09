@@ -1,7 +1,11 @@
 {
   "display": {
-    "title": "Mob Rich",
-    "description": "Get a stack of spawn eggs",
+    "title": {
+      "translate": "advancements.craftablemobs.mob_rich.title"
+    },
+    "description": {
+      "translate": "advancements.craftablemobs.mob_rich.description"
+    },
     "icon": {
       "item": "minecraft:diamond"
     },

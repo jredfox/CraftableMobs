@@ -1,7 +1,11 @@
 {
   "display": {
-    "title": "Craftable Mobs",
-    "description": "Craft a spawn egg",
+    "title": {
+      "translate": "advancements.craftablemobs.craftablemobs.title"
+    },
+    "description": {
+      "translate": "advancements.craftablemobs.craftablemobs.description"
+    },
     "icon": {
       "item": "minecraft:spawn_egg"
     },

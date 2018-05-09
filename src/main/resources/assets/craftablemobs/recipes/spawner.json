@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IDI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_bars"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:mob_spawner"
+  }
+}

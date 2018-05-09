@@ -1,7 +1,11 @@
 {
   "display": {
-    "title": "Even more mobs",
-    "description": "Craft a mob spawner",
+    "title": {
+      "translate": "advancements.craftablemobs.more_mobs.title"
+    },
+    "description": {
+      "translate": "advancements.craftablemobs.more_mobs.description"
+    },
     "icon": {
       "item": "minecraft:mob_spawner"
     }

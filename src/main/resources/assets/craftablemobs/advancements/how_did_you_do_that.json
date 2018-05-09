@@ -1,7 +1,11 @@
 {
   "display": {
-    "title": "How did you do that?",
-    "description": "Transport an elder guardian to the nether and kill him there... Or find another way to get it there.",
+    "title": {
+      "translate": "advancements.craftablemobs.how_did_you_do_that.title"
+    },
+    "description": {
+      "translate": "advancements.craftablemobs.how_did_you_do_that.description"
+    },
     "icon": {
       "item": "minecraft:sponge"
     },
