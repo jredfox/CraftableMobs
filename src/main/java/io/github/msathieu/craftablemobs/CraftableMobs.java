@@ -68,6 +68,10 @@ public class CraftableMobs {
     registerEgg(mob, Item.getItemFromBlock(ingredient));
   }
   
+  public static void registerEgg(ResourceLocation mob, Block ingredient) {
+    registerModEgg(mob, Item.getItemFromBlock(ingredient));
+  }
+  
   public static final ResourceLocation eggsGroup = new ResourceLocation("craftablemobs:eggs");
   
   public static void registerEgg(String mob, Item ingredient) {
