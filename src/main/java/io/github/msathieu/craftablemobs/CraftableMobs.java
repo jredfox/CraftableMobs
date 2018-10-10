@@ -64,11 +64,17 @@ public class CraftableMobs {
     registerEgg("vex", Items.IRON_SWORD);
     registerEgg("skeleton_horse", Blocks.BONE_BLOCK);
   }
-  private void registerEgg(String mob, Block ingredient) {
+  public static void registerEgg(String mob, Block ingredient) {
     registerEgg(mob, Item.getItemFromBlock(ingredient));
   }
-  private void registerEgg(String mob, Item ingredient) {
-    ResourceLocation eggsGroup = new ResourceLocation("craftablemobs:eggs");
+  
+  public static final ResourceLocation eggsGroup = new ResourceLocation("craftablemobs:eggs");
+  
+  public static void registerEgg(String mob, Item ingredient) {
+      registerModEgg(new ResourceLocation("minecraft",mob),ingredient);
+  }
+  
+  public static void registerModEgg(ResourceLocation mob,Item ingredient){
     ItemStack egg = new ItemStack(Items.SPAWN_EGG);
     ItemMonsterPlacer.applyEntityIdToItemStack(egg, new ResourceLocation("minecraft:" + mob));
     GameRegistry.addShapedRecipe(new ResourceLocation("craftablemobs:" + mob + "_egg"), eggsGroup, egg, new Object[] {
@@ -79,4 +85,5 @@ public class CraftableMobs {
       'E', Items.SPAWN_EGG
     });
   }
+
 }
