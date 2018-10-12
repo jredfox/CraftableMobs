@@ -80,7 +80,7 @@ public class CraftableMobs {
   
   public static void registerModEgg(ResourceLocation mob,Item ingredient){
     ItemStack egg = new ItemStack(Items.SPAWN_EGG);
-    ItemMonsterPlacer.applyEntityIdToItemStack(egg, new ResourceLocation("minecraft:" + mob));
+    ItemMonsterPlacer.applyEntityIdToItemStack(egg, mob);
     GameRegistry.addShapedRecipe(new ResourceLocation("craftablemobs:" + mob + "_egg"), eggsGroup, egg, new Object[] {
       "III",
       "IEI",
